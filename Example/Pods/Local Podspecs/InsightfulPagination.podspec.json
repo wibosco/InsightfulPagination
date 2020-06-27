@@ -1,0 +1,24 @@
+{
+  "name": "InsightfulPagination",
+  "version": "0.0.1",
+  "summary": "A chatty alternative to UIPageViewController.",
+  "homepage": "http://www.williamboles.me",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE.md"
+  },
+  "authors": "William Boles",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/wibosco/InsightfulPagination.git",
+    "branch": "master",
+    "tag": "0.0.1"
+  },
+  "source_files": "InsightfulPagination/**/*.swift",
+  "requires_arc": true,
+  "frameworks": "UIKit",
+  "swift_version": "5.0"
+}

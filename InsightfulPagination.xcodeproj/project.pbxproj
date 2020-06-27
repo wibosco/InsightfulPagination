@@ -10,6 +10,8 @@
 		3D114B3524A5FBA3005801D2 /* InsightfulPagination.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D114B2B24A5FBA3005801D2 /* InsightfulPagination.framework */; };
 		3D114B4924A6003C005801D2 /* InsightfulPagination.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D114B4724A6003C005801D2 /* InsightfulPagination.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D114B4F24A60073005801D2 /* InsightfulPaginationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D114B4D24A60073005801D2 /* InsightfulPaginationTests.swift */; };
+		3D114B5224A625A9005801D2 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D114B5124A625A9005801D2 /* PagingViewController.swift */; };
+		3D114B5424A6474E005801D2 /* PagingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D114B5324A6474E005801D2 /* PagingScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		3D114B4724A6003C005801D2 /* InsightfulPagination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsightfulPagination.h; sourceTree = "<group>"; };
 		3D114B4B24A60073005801D2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D114B4D24A60073005801D2 /* InsightfulPaginationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsightfulPaginationTests.swift; sourceTree = "<group>"; };
+		3D114B5124A625A9005801D2 /* PagingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingViewController.swift; sourceTree = "<group>"; };
+		3D114B5324A6474E005801D2 /* PagingScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				3D114B4524A6003C005801D2 /* SupportingFiles */,
+				3D114B5024A62596005801D2 /* ViewController */,
 			);
 			path = InsightfulPagination;
 			sourceTree = "<group>";
@@ -108,6 +113,15 @@
 				3D114B4D24A60073005801D2 /* InsightfulPaginationTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		3D114B5024A62596005801D2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D114B5124A625A9005801D2 /* PagingViewController.swift */,
+				3D114B5324A6474E005801D2 /* PagingScrollView.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 				TargetAttributes = {
 					3D114B2A24A5FBA3005801D2 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					3D114B3324A5FBA3005801D2 = {
 						CreatedOnToolsVersion = 11.5;
@@ -219,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D114B5224A625A9005801D2 /* PagingViewController.swift in Sources */,
+				3D114B5424A6474E005801D2 /* PagingScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +381,7 @@
 		3D114B4024A5FBA3005801D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -379,6 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.williamboles.InsightfulPagination;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,6 +406,7 @@
 		3D114B4124A5FBA3005801D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -410,6 +430,7 @@
 		3D114B4324A5FBA3005801D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InsightfulPaginationTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,6 +448,7 @@
 		3D114B4424A5FBA3005801D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = InsightfulPaginationTests/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

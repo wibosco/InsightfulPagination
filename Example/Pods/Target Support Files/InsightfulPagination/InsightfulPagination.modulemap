@@ -1,0 +1,6 @@
+framework module InsightfulPagination {
+  umbrella header "InsightfulPagination-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - InsightfulPagination (0.0.1)
+
+DEPENDENCIES:
+  - InsightfulPagination (from `../`)
+
+EXTERNAL SOURCES:
+  InsightfulPagination:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InsightfulPagination: f321ef287793c7f8590753bf8daea614660e5065
+
+PODFILE CHECKSUM: 9f8859ee96b542a22d56ab3458d08dacac4eaa13
+
+COCOAPODS: 1.8.4
